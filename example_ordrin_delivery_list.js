@@ -1,8 +1,8 @@
+var myconfig = require("./private_ordrin_key.json");
 //This file should exist in this folder and contain 1 line:
-//{private_ordrin_key: 'aslkdjfasdlkfjasdfljkasdf'}
+//{"private_ordrin_key": "aslkdjfasdlkfjasdfljkasdf"}
 //you get your private key from https://hackfood.ordr.in/account
 
-myconfig = require("./private_ordrin_key.json");
 var ordrin = require("ordrin-api");
 // Initialize with your application secret key
 var ordrin_api = new  ordrin.APIs(myconfig.private_ordrin_key, ordrin.TEST);
